@@ -40,6 +40,7 @@ router.post('/register', async(req,res)=>{
             (err,token)=>{
                 if(err) throw err;
                 res.json({token});
+                
             }
         );
     } catch(err){
